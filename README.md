@@ -1,3 +1,3 @@
 # Neto
 
-Simplify decision.
+Discover, Share, and Shape Your World
