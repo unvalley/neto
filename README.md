@@ -1,3 +1,3 @@
 # Neto
 
-Discover, Share, and Shape Your World
+Discover and Shape Your World
