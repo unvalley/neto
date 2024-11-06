@@ -25,6 +25,7 @@ export default function TabLayout() {
 							color={color}
 						/>
 					),
+                    tabBarLabelPosition: "below-icon",
 				}}
 			/>
 			<Tabs.Screen
@@ -33,10 +34,24 @@ export default function TabLayout() {
 					title: "Explore",
 					tabBarIcon: ({ color, focused }) => (
 						<TabBarIcon
-							name={focused ? "code-slash" : "code-slash-outline"}
+							name={focused ? "telescope" : "telescope-outline"}
 							color={color}
 						/>
 					),
+                    tabBarLabelPosition: "below-icon",
+				}}
+			/>
+			<Tabs.Screen
+				name="user"
+				options={{
+					title: "User",
+					tabBarIcon: ({ color, focused }) => (
+						<TabBarIcon
+							name={focused ? "person" : "person-outline"}
+							color={color}
+						/>
+					),
+                    tabBarLabelPosition: "below-icon",
 				}}
 			/>
 		</Tabs>
