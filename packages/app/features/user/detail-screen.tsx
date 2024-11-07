@@ -9,15 +9,15 @@ export function UserDetailScreen({ id }: { id: string }) {
   }
   return (
     <YStack
-      f={1}
-      jc="center"
-      ai="center"
+      flex={1}
+      justifyContent="center"
+      alignItems="center"
       gap="$4"
       bg="$background"
     >
       <Paragraph
-        ta="center"
-        fow="700"
+        textAlign="center"
+        fontWeight="700"
         col="$blue10"
       >{`User ID: ${id}`}</Paragraph>
       <Button

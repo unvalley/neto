@@ -23,44 +23,40 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
 
   return (
     <YStack
-      f={1}
-      jc="center"
-      ai="center"
+      flex={1}
+      justifyContent="center"
+      alignItems="center"
       gap="$8"
-      p="$4"
+      padding="$4"
       bg="$background"
     >
       <XStack
         pos="absolute"
-        w="100%"
-        t="$6"
+        width="100%"
+        top="$6"
         gap="$6"
-        jc="center"
-        fw="wrap"
+        justifyContent="center"
+        flexWrap="wrap"
         $sm={{ pos: 'relative', t: 0 }}
       >
-        {Platform.OS === 'web' && (
-          <>
-            <SwitchThemeButton />
-          </>
-        )}
+        {Platform.OS === 'web' && <SwitchThemeButton />}
       </XStack>
 
       <YStack gap="$4">
         <H1
-          ta="center"
+          textAlign="center"
           col="$color12"
         >
-          Welcome to Tamagui.
+          Home
         </H1>
         <Paragraph
           col="$color10"
-          ta="center"
+          textAlign="center"
         >
           Here's a basic starter to show navigating from one screen to another.
         </Paragraph>
         <Separator />
-        <Paragraph ta="center">
+        <Paragraph textAlign="center">
           This screen uses the same code on Next.js and React Native.
         </Paragraph>
         <Separator />
@@ -104,13 +100,13 @@ function SheetDemo() {
         />
         <Sheet.Handle bg="$gray8" />
         <Sheet.Frame
-          ai="center"
-          jc="center"
+          alignItems="center"
+          justifyContent="center"
           gap="$10"
           bg="$color2"
         >
           <XStack gap="$2">
-            <Paragraph ta="center">Made by</Paragraph>
+            <Paragraph textAlign="center">Made by</Paragraph>
             <Anchor
               col="$blue10"
               href="https://twitter.com/natebirdman"
