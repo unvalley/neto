@@ -21,6 +21,7 @@
     "preserveConstEnums": true,
     // DONT DO THIS so jsdoc will remain
     "removeComments": false,
+    "strict": true,
     "skipLibCheck": true,
     "sourceMap": false,
     "strictNullChecks": true,

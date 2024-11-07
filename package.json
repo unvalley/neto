@@ -19,8 +19,7 @@
     "upgrade:tamagui:canary": "yarn up '*tamagui*'@canary '@tamagui/*'@canary react-native-web-lite@canary",
     "check-tamagui": "tamagui check",
     "test": "vitest run",
-    "test:watch": "vitest",
-    "prepare": "husky"
+    "test:watch": "vitest"
   },
   "resolutions": {
     "react": "^18.3.1",
@@ -34,9 +33,7 @@
     "@tamagui/cli": "^1.116.12",
     "check-dependency-version-consistency": "^4.1.0",
     "eslint": "^9.3.0",
-    "husky": "^9.1.6",
     "node-gyp": "^10.1.0",
-    "prettier": "^3.3.3",
     "turbo": "^1.13.4",
     "typescript": "^5.6.2",
     "vitest": "^2.1.1"
