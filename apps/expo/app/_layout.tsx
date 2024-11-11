@@ -6,7 +6,7 @@ import { SplashScreen, Stack } from 'expo-router'
 import { Provider } from 'app/provider'
 import { NativeToast } from '@my/ui/src/NativeToast'
 
-export const unstable_settings = {
+export const unstableSettings = {
   // Ensure that reloading on `/user` keeps a back button present.
   initialRouteName: 'Home',
 }

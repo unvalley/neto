@@ -15,10 +15,14 @@ import { useState } from 'react'
 import { Platform } from 'react-native'
 import { useLink } from 'solito/navigation'
 
-export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
-  const linkTarget = pagesMode ? '/pages-example-user' : '/user'
+export const HomeScreen = ({ pagesMode = false }: { pagesMode?: boolean }) => {
+  const linkTarget = '/user'
   const linkProps = useLink({
-    href: `${linkTarget}/nate`,
+    href: `${linkTarget}/unvalley`,
+  })
+
+  const itemLinkProps = useLink({
+    href: '/item/1',
   })
 
   return (
@@ -63,13 +67,14 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
       </YStack>
 
       <Button {...linkProps}>Link to user</Button>
+      <Button {...itemLinkProps}>Link to item</Button>
 
       <SheetDemo />
     </YStack>
   )
 }
 
-function SheetDemo() {
+const SheetDemo = () => {
   const toast = useToastController()
 
   const [open, setOpen] = useState(false)
